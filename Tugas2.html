@@ -93,86 +93,89 @@
         display: flex;
         justify-content: center; 
         align-items: center;">
-        <table>
-          <tbody style="align-items: center;">
-            <tr>
-              <td style="padding: 10px;"><label for="namadepan">Nama Depan</label></td>
-              <td>
-                <input
-                  type="text"
-                  id="namadepan"
-                  name="namadepan"
-                  placeholder="Masukkan Nama Depan"
-                  required
-                />
-              </td>
-            </tr>
-            <tr>
-              <td style="padding: 10px;"><label for="namabelakang">Nama Belakang</label></td>
-              <td>
-                <input
-                  type="text"
-                  id="namabelakang"
-                  name="namabelakang"
-                  placeholder="Masukkan Nama Belakang"
-                  required
-                />
-              </td>
-            </tr>
-            <tr>
-              <td style="padding: 10px;"><label for="alamat">Alamat</label></td>
-              <td>
-                <input
-                  type="text"
-                  id="alamat"
-                  name="alamat"
-                  placeholder="Masukkan Alamat"
-                  required
-                />
-              </td>
-            </tr>
-            <tr>
-              <td style="padding: 10px;"><label for="tanggallahir">Tanggal Lahir</label></td>
-              <td>
-                <input
-                  type="date"
-                  id="tanggallahir"
-                  name="tanggallahir"
-                  placeholder="Masukkan Tanggal Lahir"
-                  required
-                />
-              </td>
-            </tr>
-            <tr>
-              <td style="padding: 10px;"><label for="jenisKelamin">Jenis Kelamin</label></td>
-              <td>
-                <select
-                  id="jenisKelamin"
-                  name="jenis_kelamin"
-                  required
-                >
-                  <option value="">Pilih Jenis Kelamin</option>
-                  <option value="laki-laki">Laki-laki</option>
-                  <option value="perempuan">Perempuan</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding: 10px;"><label for="username">Username</label></td>
-              <td>
-                <input
-                  type="text"
-                  id="username"
-                  name="username"
-                  placeholder="Masukkan Username"
-                  required
-                />
-              </td>
-            </tr>
-            <tr>
-              <td style="padding: 10px;" ><label for="password">Password</label></td>
-              <td>
-                <div>
+          <table border="1" cellspacing="0" cellpadding="5"> <!-- Menambahkan border dan pengaturan sel -->
+            <thead>
+              <tr>
+                <th colspan="2" style="text-align: center;">Formulir Pendaftaran</th> <!-- Header tabel dengan colspan -->
+              </tr>
+            </thead>
+            <tbody style="align-items: center;">
+              <tr>
+                <td style="padding: 10px;"><label for="namadepan">Nama Depan</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="namadepan"
+                    name="namadepan"
+                    placeholder="Masukkan Nama Depan"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px;"><label for="namabelakang">Nama Belakang</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="namabelakang"
+                    name="namabelakang"
+                    placeholder="Masukkan Nama Belakang"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px;"><label for="alamat">Alamat</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="alamat"
+                    name="alamat"
+                    placeholder="Masukkan Alamat"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px;"><label for="tanggallahir">Tanggal Lahir</label></td>
+                <td>
+                  <input
+                    type="date"
+                    id="tanggallahir"
+                    name="tanggallahir"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px;"><label for="jenisKelamin">Jenis Kelamin</label></td>
+                <td>
+                  <select
+                    id="jenisKelamin"
+                    name="jenis_kelamin"
+                    required
+                  >
+                    <option value="">Pilih Jenis Kelamin</option>
+                    <option value="laki-laki">Laki-laki</option>
+                    <option value="perempuan">Perempuan</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px;"><label for="username">Username</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Masukkan Username"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px;"><label for="password">Password</label></td>
+                <td>
                   <input
                     type="password"
                     id="password"
@@ -180,28 +183,27 @@
                     placeholder="Masukkan Password"
                     required
                   />
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding: 10px;"><label for="browsefoto">Browse Foto</label></td>
-              <td>
-                <input
-                  type="file"
-                  id="browsefoto"
-                  name="browsefoto"
-                  placeholder="Masukkan File"
-                  required
-                />
-              </td>
-            </tr>
-            <tr>
-              <td style="padding: 10px;" colspan="2">
-                <button type="submit">Daftar</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px;"><label for="browsefoto">Browse Foto</label></td>
+                <td>
+                  <input
+                    type="file"
+                    id="browsefoto"
+                    name="browsefoto"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px;" colspan="2" style="text-align: center;">
+                  <button type="submit">Daftar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>        
       </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
